@@ -64,6 +64,12 @@ button:hover {
   background-color: #005f99;
 }
 
+.gender-options {
+  grid-column: 2 / 3;
+  display: flex;
+  gap: 1rem;
+}
+
 .back-link {
   margin-top: 2rem;
   display: inline-block;
