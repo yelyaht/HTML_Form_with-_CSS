@@ -28,7 +28,13 @@ body {
 
 form {
   display: grid;
+  grid-template-columns: 1fr 2fr;
   gap: 1rem;
+}
+
+}
+label {
+  grid-column: 1 / 2;
 }
 
 input,
@@ -37,6 +43,7 @@ textarea {
   padding: 0.5rem;
   border: 1px solid #ccc;
   border-radius: 6px;
+  grid-column: 2 / 3;
 }
 
 input[type="radio"],
