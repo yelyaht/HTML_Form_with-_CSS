@@ -32,7 +32,6 @@ form {
   gap: 1rem;
 }
 
-}
 label {
   grid-column: 1 / 2;
 }
