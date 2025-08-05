@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Info Form</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="form-container">
+    <h1>User Information Form</h1>
+    <form action="results.html" method="get">
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" placeholder="Your name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="your@email.com" required />
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required />
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" min="1" max="120" />
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" />
+
+      <label>Gender:</label>
+      <label><input type="radio" name="gender" value="Male" /> Male</label>
+      <label><input type="radio" name="gender" value="Female" /> Female</label>
+      <label><input type="radio" name="gender" value="Other" /> Other</label>
+
+      <label for="interests">Select Your Interests:</label>
+      <select id="interests" name="interests">
+        <option value="coding">Coding</option>
+        <option value="music">Music</option>
+        <option value="sports">Sports</option>
+      </select>
+
+      <label for="bio">Short Bio:</label>
+      <textarea id="bio" name="bio" rows="4" placeholder="Tell us about yourself"></textarea>
+
+      <label>
+        <input type="checkbox" name="subscribe" value="yes" />
+        Subscribe to newsletter
+      </label>
+
+      <label for="color">Favorite Color:</label>
+      <input type="color" id="color" name="color" />
+
+      <label for="range">How much do you like forms? (1–100)</label>
+      <input type="range" id="range" name="range" min="1" max="100" />
+
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+</body>
+</html>
