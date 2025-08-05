@@ -28,10 +28,11 @@ body {
 
 form {
   display: flex;
-  flex-direction: column;
+  grid-template-columns: 1fr;
   gap: 1rem;
 }
 
+label,
 input,
 select,
 textarea {
@@ -62,9 +63,10 @@ button:hover {
 }
 
 .gender-options {
-  grid-column: 2 / 3;
   display: flex;
-  gap: 1rem;
+  flex-direction: column;
+  gap: 0.5rem;
+  grid-column: 1 / -1;
 }
 
 .back-link {
